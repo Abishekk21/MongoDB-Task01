@@ -8,7 +8,7 @@ db.Products.find({product_price:{$gt:400,$lt:800}})
 
 //Find the product price which are not between 400 to 600
 
-db.products.find({ product_price: { $not: { $gte: 400, $lte: 600 } } })
+db.Products.find({ product_price: { $not: { $gte: 400, $lte: 600 } } })
 
 //List the four product which are grater than 500 in price 
 
@@ -42,7 +42,7 @@ db.Products
         { $match: { count: { $gt: 1 } } },
     ])
     .forEach((doc) => {
-        db.products.remove({ product_price: doc._id });
+        db.Products.remove({ product_price: doc._id });
     });
     
     
