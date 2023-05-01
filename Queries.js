@@ -45,6 +45,7 @@ db.Products
         db.Products.remove({ product_price: doc._id });
     });
     
-    
-    
+   
+
+/////////////////////////////////////////////////////////////////////// SCREENSHOTS ADDED UNDER WIKI TAB IN THIS WINDOW
     
